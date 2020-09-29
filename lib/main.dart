@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -17,5 +19,7 @@ class _HomeState extends State<Home> {
     return Container();
   }
 }
-
-
+Future<File> _getFile() async {
+  final directory = await getApplicationDocumentsDirectory();
+  return File("${directory.path}/data.json");
+}
