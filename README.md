@@ -1,6 +1,6 @@
-# todo_list
+# To-Do List
 
-A new Flutter application.
+Application based on Daniel Ciolfi's course.
 
 ## Getting Started
 
